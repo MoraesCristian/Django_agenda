@@ -17,3 +17,15 @@ git init
 git add .
 git commit -m 'Mensagem'
 git remote add origin git@github.com:MoraesCristian/Django_agenda.git
+
+# MIGRANDO BASE DE DADOS NO DJANGO 
+
+python manage.py makemigrations
+python manage.py migrate
+
+# CRIANDO E MODIFICANDO A SENHA DE UM SUPER USUÁRIO DJANGO
+
+python manage.py createsuperuser
+
+# Alteracao de senha caso esqueça
+python manage.py changepassword USERNAME
