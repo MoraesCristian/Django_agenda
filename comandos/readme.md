@@ -29,3 +29,4 @@ python manage.py createsuperuser
 
 # Alteracao de senha caso esqueça
 python manage.py changepassword USERNAME
+
