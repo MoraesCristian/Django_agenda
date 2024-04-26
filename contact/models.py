@@ -19,11 +19,11 @@ class Contact(models.Model):
     last_name = models.CharField(max_length=50, blank=True)
     phone = models.CharField(max_length=50)
     email = models.EmailField(max_length=250, blank=True)
-    create_data = models.DateTimeField(default=timezone.now)
+    created_data = models.DateTimeField(default=timezone.now)
     description = models.TextField(blank=True)
     show = models.BooleanField(default=True)
     picture = models.ImageField(blank=True, upload_to='pictures/%Y/%m/')
-    cadegory = models.ForeignKey(Category, on_delete=models.SET_NULL, blank=True, null=True)
+    category = models.ForeignKey(Category, on_delete=models.SET_NULL, blank=True, null=True)
     owner = models.ForeignKey(User, on_delete=models.SET_NULL, blank=True, null=True)
     
     def __str__(self) -> str:

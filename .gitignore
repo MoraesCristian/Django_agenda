@@ -143,3 +143,4 @@ GitHub.sublime-settings
 
 #ARQUIVOS NAO USADOS 
 COMAND_USADOS.txt
+local_settings.py
